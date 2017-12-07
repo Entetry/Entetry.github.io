@@ -1,0 +1,1287 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+  color: #5e493a;
+}
+body.Simle-overflow {
+  overflow-x: auto;
+}
+
+a {
+  color: #fb6e14;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover, a:focus, a:active {
+  color: #bf4c03;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+.btn {
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.btn.btn-md {
+  padding: 10px 20px !important;
+}
+.btn.btn-lg {
+  padding: 18px 36px !important;
+}
+.btn:hover, .btn:active, .btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-primary {
+  background: #fb6e14;
+  color: #fff;
+  border: 2px solid #fb6e14;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background: #f16104 !important;
+  border-color: #f16104 !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #fb6e14;
+  border: 2px solid #fb6e14;
+}
+.btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
+  background: #fb6e14;
+  color: #fff;
+}
+
+.btn-success {
+  background: #58ca7e;
+  color: #fff;
+  border: 2px solid #58ca7e;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background: #45c46f !important;
+  border-color: #45c46f !important;
+}
+.btn-success.btn-outline {
+  background: transparent;
+  color: #58ca7e;
+  border: 2px solid #58ca7e;
+}
+.btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
+  background: #58ca7e;
+  color: #fff;
+}
+
+.btn-info {
+  background: #1784fb;
+  color: #fff;
+  border: 2px solid #1784fb;
+}
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+  background: #0477f4 !important;
+  border-color: #0477f4 !important;
+}
+.btn-info.btn-outline {
+  background: transparent;
+  color: #1784fb;
+  border: 2px solid #1784fb;
+}
+.btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
+  background: #1784fb;
+  color: #fff;
+}
+
+.btn-warning {
+  background: #fed330;
+  color: #fff;
+  border: 2px solid #fed330;
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active {
+  background: #fece17 !important;
+  border-color: #fece17 !important;
+}
+.btn-warning.btn-outline {
+  background: transparent;
+  color: #fed330;
+  border: 2px solid #fed330;
+}
+.btn-warning.btn-outline:hover, .btn-warning.btn-outline:focus, .btn-warning.btn-outline:active {
+  background: #fed330;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #fb4f59;
+  color: #fff;
+  border: 2px solid #fb4f59;
+}
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active {
+  background: #fa3641 !important;
+  border-color: #fa3641 !important;
+}
+.btn-danger.btn-outline {
+  background: transparent;
+  color: #fb4f59;
+  border: 2px solid #fb4f59;
+}
+.btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
+  background: #fb4f59;
+  color: #fff;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid gray;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
+  box-shadow: none;
+}
+
+.form-control {
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  height: 54px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.form-control:active, .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #fb6e14;
+}
+
+/*
+ * Flexslider
+ */
+#Simle-home {
+  min-height: 700px;
+  background: #fff url(../images/loader.gif) no-repeat center center;
+}
+#Simle-home .flexslider {
+  border: none;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+#Simle-home .flexslider .Simle-text {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  top: 50%;
+  margin-top: -212px;
+  text-align: center;
+}
+#Simle-home .flexslider .Simle-text h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 300px;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 992px) {
+  #Simle-home .flexslider .Simle-text h1 {
+    font-size: 100px;
+  }
+}
+#Simle-home .flexslider .Simle-text h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  #Simle-home .flexslider .Simle-text h2 {
+    font-size: 20px;
+  }
+}
+#Simle-home .flexslider .Simle-text h2 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-transform: none;
+
+}
+#Simle-home .flexslider .Simle-text h2 a {
+  color: #fb6e14;
+}
+#Simle-home .flexslider .slides li {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+#Simle-home .flexslider .Simle-overlay {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .5;
+  background: #000;
+}
+#Simle-home .flexslider .flex-control-nav,
+#Simle-home .flexslider .flex-direction-nav {
+  display: none;
+}
+
+.Simle-main-nav {
+  position: relative;
+  background: #fff;
+}
+.Simle-main-nav.Simle-shadow {
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+}
+.Simle-main-nav:before, .Simle-main-nav:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #e6e6e6;
+}
+.Simle-main-nav:before {
+  top: 2px;
+}
+.Simle-main-nav:after {
+  bottom: 2px;
+}
+.Simle-main-nav .Simle-menu-1,
+.Simle-main-nav .Simle-menu-2,
+.Simle-main-nav .Simle-logo {
+  vertical-align: middle;
+  float: left;
+  line-height: 0;
+}
+.Simle-main-nav .Simle-menu-1 a,
+.Simle-main-nav .Simle-menu-2 a,
+.Simle-main-nav .Simle-logo a {
+  padding: 35px 10px;
+  color: #130d08;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.Simle-main-nav .Simle-menu-1 a:hover, .Simle-main-nav .Simle-menu-1 a:focus, .Simle-main-nav .Simle-menu-1 a:active,
+.Simle-main-nav .Simle-menu-2 a:hover,
+.Simle-main-nav .Simle-menu-2 a:focus,
+.Simle-main-nav .Simle-menu-2 a:active,
+.Simle-main-nav .Simle-logo a:hover,
+.Simle-main-nav .Simle-logo a:focus,
+.Simle-main-nav .Simle-logo a:active {
+  outline: none;
+  text-decoration: none;
+}
+.Simle-main-nav .Simle-menu-1 a.active,
+.Simle-main-nav .Simle-menu-2 a.active,
+.Simle-main-nav .Simle-logo a.active {
+  color: #fb6e14;
+}
+.Simle-main-nav .Simle-menu-1 {
+  text-align: right;
+  width: 40.33%;
+}
+.Simle-main-nav .Simle-menu-1 a {
+  vertical-align: middle;
+}
+.Simle-main-nav .Simle-logo {
+  text-align: center;
+  width: 19.33%;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.Simle-main-nav .Simle-logo a {
+  position: relative;
+  top: -5px;
+  display: inline-block;
+}
+.Simle-main-nav .Simle-menu-2 {
+  text-align: left;
+  width: 40.33%;
+}
+
+.Simle-heading .heading {
+  font-size: 50px;
+  font-style: italic;
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .Simle-heading .heading {
+    font-size: 30px;
+  }
+}
+.Simle-heading .heading:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  left: 50%;
+  background: #fb6e14;
+  margin-left: -20px;
+}
+.Simle-heading .sub-heading {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .Simle-heading .sub-heading {
+    font-size: 18px;
+  }
+}
+
+#Simle-about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  background: #e6e6e6;
+  width: 100%;
+  text-align: center;
+  color:black;
+    background: #130d08 url(../images/red.jpg) repeat;
+}
+
+
+#Simle-sayings {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #Simle-sayings {
+    padding: 5em 0;
+  }
+}
+#Simle-sayings .flexslider .slides li {
+  font-size: 40px;
+  line-height: 1.5;
+}
+#Simle-sayings .flexslider .slides li blockquote {
+  padding-left: 0;
+  border-left: none;
+}
+@media screen and (max-width: 768px) {
+  #Simle-sayings .flexslider .slides li blockquote {
+    padding: 0 20px;
+  }
+}
+#Simle-sayings .flexslider .slides li blockquote p {
+  font-size: 40px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  #Simle-sayings .flexslider .slides li blockquote p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+#Simle-sayings .flexslider .slides li blockquote p.quote-author {
+  font-size: 20px;
+  color: gray;
+}
+@media screen and (max-width: 768px) {
+  #Simle-sayings .flexslider .slides li blockquote p.quote-author {
+    font-size: 18px;
+  }
+}
+#Simle-sayings .flexslider .flex-control-paging {
+  position: relative;
+}
+#Simle-sayings .flexslider .flex-control-paging.flex-control-nav {
+  bottom: -70px;
+}
+@media screen and (max-width: 768px) {
+  #Simle-sayings .flexslider .flex-control-paging.flex-control-nav {
+    bottom: -60px;
+  }
+}
+#Simle-sayings .flexslider .flex-control-paging li a {
+  width: 14px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: none;
+}
+#Simle-sayings .flexslider .flex-control-paging li a:active, #Simle-sayings .flexslider .flex-control-paging li a:focus {
+  outline: none;
+}
+#Simle-sayings .flexslider .flex-control-paging li a.flex-active {
+  top: 2px;
+  position: relative;
+  background: transparent;
+  box-shadow: none;
+  border: 2px solid #fb6e14;
+}
+
+#Simle-featured {
+  padding: 7em 0;
+  background: #130d08 url(../images/wood_1.png) repeat;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured {
+    padding: 5em 0;
+  }
+}
+#Simle-featured .Simle-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+  color: #fff;
+}
+#Simle-featured .Simle-heading .heading:before, #Simle-featured .Simle-heading .heading::before {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  content: "";
+  background: url(../images/0103-served-plate_64.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -32px;
+}
+#Simle-featured .Simle-heading .sub-heading {
+  color: #a99c92;
+}
+#Simle-featured .Simle-grid {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+#Simle-featured .Simle-grid h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+#Simle-featured .Simle-grid p {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #222;
+}
+#Simle-featured .Simle-grid .pricing {
+  font-size: 40px;
+  display: block;
+  padding-top: 20px;
+}
+#Simle-featured .Simle-grid .pricing:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  left: 50%;
+  margin-left: -20px;
+  background: #fb6e14;
+}
+#Simle-featured .Simle-grid .arrow-left:before, #Simle-featured .Simle-grid .arrow-left::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  left: 0;
+  margin-left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #f5f5f5;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid .arrow-left:before, #Simle-featured .Simle-grid .arrow-left::before {
+    right: auto !important;
+    left: 15px !important;
+    top: 0 !important;
+    margin-top: -15px !important;
+    margin-left: 0px !important;
+    border-top: none !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #f5f5f5 !important;
+  }
+}
+#Simle-featured .Simle-grid .arrow-right:before, #Simle-featured .Simle-grid .arrow-right::before {
+  content: "";
+  position: absolute;
+  z-index: 999;
+  top: 50px;
+  right: 0;
+  margin-right: -15px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #f5f5f5;
+}
+@media screen and (max-width: 992px) {
+  #Simle-featured .Simle-grid .arrow-right:before, #Simle-featured .Simle-grid .arrow-right::before {
+    right: auto !important;
+    left: 0 !important;
+    margin-left: -15px !important;
+    border-left: none !important;
+    border-right: 15px solid #f5f5f5 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid .arrow-right:before, #Simle-featured .Simle-grid .arrow-right::before {
+    right: auto !important;
+    left: 15px !important;
+    top: 0 !important;
+    margin-top: -15px !important;
+    margin-left: 0px !important;
+    border-top: none !important;
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #f5f5f5 !important;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half {
+  width: 50%;
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+@media screen and (max-width: 992px) {
+  #Simle-featured .Simle-grid > .Simle-v-half {
+    width: 100%;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half .Simle-text {
+  background: #f5f5f5;
+}
+#Simle-featured .Simle-grid > .Simle-v-half .Simle-special-1 {
+  background: #faebcd;
+}
+#Simle-featured .Simle-grid > .Simle-v-half .Simle-special-1.arrow-left:before, #Simle-featured .Simle-grid > .Simle-v-half .Simle-special-1.arrow-left::before {
+  border-right: 15px solid #faebcd;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid > .Simle-v-half .Simle-special-1.arrow-left:before, #Simle-featured .Simle-grid > .Simle-v-half .Simle-special-1.arrow-left::before {
+    border-left: 15px solid transparent !important;
+    border-right: 15px solid transparent !important;
+    border-bottom: 15px solid #faebcd !important;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-v-col-2 {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-v-col-2.Simle-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid > .Simle-v-half > .Simle-v-col-2.Simle-bg-img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid > .Simle-v-half > .Simle-v-col-2 {
+    width: 100%;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2 {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2 > .Simle-v-col-2 {
+  width: 50%;
+  position: relative;
+  padding: 20px;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2 > .Simle-v-col-2 {
+    width: 100%;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2 > .Simle-v-col-2.Simle-bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 768px) {
+  #Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2 > .Simle-v-col-2.Simle-bg-img {
+    height: 200px;
+  }
+}
+#Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2.Simle-reversed .Simle-bg-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+@media screen and (max-width: 992px) {
+  #Simle-featured .Simle-grid > .Simle-v-half > .Simle-h-row-2.Simle-reversed .Simle-bg-img {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+  }
+}
+
+#Simle-menus {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #Simle-menus {
+    padding: 5em 0;
+  }
+}
+#Simle-menus .Simle-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+}
+#Simle-menus .Simle-heading .heading:before, #Simle-menus .Simle-heading .heading::before {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  content: "";
+  background: url(../images/0401-vegan.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -32px;
+}
+#Simle-menus .Simle-heading .sub-heading {
+  color: #a99c92;
+}
+#Simle-menus .Simle-food-menu {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  #Simle-menus .Simle-food-menu {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    clear: none !important;
+  }
+}
+#Simle-menus .Simle-food-menu h2 {
+  margin-bottom: 50px;
+  font-style: italic;
+  position: relative;
+}
+#Simle-menus .Simle-food-menu h2.Simle-drinks {
+  padding-left: 50px;
+}
+#Simle-menus .Simle-food-menu h2.Simle-drinks:before {
+  background: url(../images/0301-pina-colada.png) no-repeat;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 64px;
+  height: 64px;
+}
+#Simle-menus .Simle-food-menu h2.Simle-dishes {
+  padding-left: 80px;
+}
+#Simle-menus .Simle-food-menu h2.Simle-dishes:before {
+  background: url(../images/0302-steak.png) no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 64px;
+  height: 45px;
+}
+#Simle-menus .Simle-food-menu ul {
+  padding: 0;
+  margin: 0;
+}
+#Simle-menus .Simle-food-menu ul li {
+  padding: 0 0 20px 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px dotted #ccc;
+  display: block;
+  float: left;
+  width: 100%;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc {
+  clear: both;
+  float: left;
+  width: 80%;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc > figure {
+  width: 20%;
+  float: left;
+  position: relative;
+  margin-right: 4%;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc > figure img {
+  max-width: 100%;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 0;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc > div {
+  width: 75%;
+  float: left;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc > div p {
+  margin: 0;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-desc > div h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 20px;
+  color: #000;
+}
+#Simle-menus .Simle-food-menu ul li .Simle-food-pricing {
+  float: right;
+  width: 20%;
+  text-align: right;
+  font-size: 20px;
+  color: #fb6e14;
+}
+
+#Simle-events {
+  padding: 7em 0;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#Simle-events > .Simle-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+#Simle-events > .container {
+  z-index: 10;
+  position: relative;
+}
+#Simle-events .Simle-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+  color: #fff;
+}
+#Simle-events .Simle-heading .heading:before, #Simle-events .Simle-heading .heading::before {
+  height: 64px;
+  width: 49px;
+  position: absolute;
+  content: "";
+  background: url(../images/0402-chef.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -24px;
+}
+#Simle-events .Simle-heading .sub-heading {
+  color: #a99c92;
+}
+@media screen and (max-width: 768px) {
+  #Simle-events {
+    padding: 5em 0;
+  }
+}
+#Simle-events .Simle-event {
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+#Simle-events .Simle-event:before {
+  border: 2px solid #e6e6e6;
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  z-index: 0;
+}
+#Simle-events .Simle-event h3, #Simle-events .Simle-event .Simle-event-meta, #Simle-events .Simle-event p, #Simle-events .Simle-event .btn {
+  position: relative;
+  z-index: 2;
+}
+#Simle-events .Simle-event h3 {
+  padding: 0;
+  margin: 0;
+}
+#Simle-events .Simle-event .Simle-event-meta {
+  margin-bottom: 20px;
+  display: block;
+  color: gray;
+  position: relative;
+  padding-bottom: 10px;
+}
+#Simle-events .Simle-event .Simle-event-meta:after, #Simle-events .Simle-event .Simle-event-meta::after {
+  background: #bfbfbf;
+  background: #fb6e14;
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  margin-left: -20px;
+}
+#Simle-events .Simle-event p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+#Simle-events .Simle-event p:last-child {
+  margin-bottom: 0;
+}
+#Simle-events .Simle-event .btn {
+  margin-bottom: 0;
+}
+
+#Simle-contact {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #Simle-contact {
+    padding: 5em 0;
+  }
+}
+#Simle-contact h3 {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+@media screen and (max-width: 768px) {
+  #Simle-contact {
+    padding: 5em 0;
+  }
+}
+#Simle-contact .Simle-heading .heading {
+  position: relative;
+  padding-top: 30px !important;
+}
+#Simle-contact .Simle-heading .heading:before, #Simle-contact .Simle-heading .heading::before {
+  height: 61px;
+  width: 61px;
+  position: absolute;
+  content: "";
+  background: url(../images/0203-coffee-love.png) no-repeat;
+  top: 0;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -24px;
+}
+#Simle-contact .Simle-heading .sub-heading {
+  color: #a99c92;
+}
+#Simle-contact .Simle-social {
+  padding: 0;
+  margin: 0;
+}
+#Simle-contact .Simle-social li {
+  padding: 0;
+  margin: 0;
+}
+#Simle-contact .Simle-contact-info {
+  padding: 0;
+  margin: 0 0 1.5em 0;
+}
+#Simle-contact .Simle-contact-info li {
+  position: relative;
+  padding: 0;
+  margin: 0 0 1.5em 0;
+  padding-left: 50px;
+  list-style: none;
+}
+#Simle-contact .Simle-contact-info li i {
+  position: absolute;
+  top: .4em;
+  left: 0;
+}
+
+#Simle-container {
+  position: relative;
+  z-index: 10;
+}
+
+#Simle-footer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 7em 0;
+  z-index: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 768px) {
+  #Simle-footer {
+    padding: 5em 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Simle-footer {
+    height: inherit;
+    position: relative;
+  }
+}
+
+.Simle-social {
+  padding: 0;
+  margin: 0;
+}
+.Simle-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: inline;
+}
+.Simle-social li a {
+  font-size: 30px;
+  padding: 10px;
+}
+.Simle-social li a i {
+  font-size: 30px;
+}
+.Simle-social li a:hover, .Simle-social li a:active, .Simle-social li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+#Simle-offcanvas, #Simle-container, .Simle-nav-toggle, #Simle-footer {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Simle-container, .Simle-nav-toggle, #Simle-footer {
+  z-index: 2;
+  position: relative;
+}
+
+#Simle-offcanvas {
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 275px;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 0.75em 1.25em;
+  -moz-transform: translateX(-275px);
+  -webkit-transform: translateX(-275px);
+  -ms-transform: translateX(-275px);
+  -o-transform: translateX(-275px);
+  transform: translateX(-275px);
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+#Simle-offcanvas a {
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 7px 0;
+}
+#Simle-offcanvas a:hover, #Simle-offcanvas a:focus, #Simle-offcanvas a:active {
+  outline: none;
+  text-decoration: none;
+  color: #fb6e14;
+}
+#Simle-offcanvas a.active {
+  color: #fb6e14;
+}
+@media screen and (max-width: 768px) {
+  #Simle-offcanvas {
+    display: block;
+  }
+}
+.offcanvas-visible #Simle-offcanvas {
+  -moz-transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  #Simle-container, #Simle-footer, .Simle-nav-toggle {
+    -moz-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+.offcanvas-visible #Simle-container, .offcanvas-visible #Simle-footer, .offcanvas-visible .Simle-nav-toggle {
+  -moz-transform: translateX(275px);
+  -webkit-transform: translateX(275px);
+  -ms-transform: translateX(275px);
+  -o-transform: translateX(275px);
+  transform: translateX(275px);
+}
+
+.js-sticky {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .js-sticky {
+    display: none;
+  }
+}
+
+.Simle-nav-toggle {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Simle-nav-toggle.active i::before, .Simle-nav-toggle.active i::after {
+  background: #fff;
+}
+.Simle-nav-toggle:hover, .Simle-nav-toggle:focus, .Simle-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.Simle-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 30px;
+  height: 2px;
+  color: #fff;
+  font: bold 14px/.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: #fff;
+  transition: all .2s ease-out;
+}
+.Simle-nav-toggle i::before, .Simle-nav-toggle i::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Simle-nav-toggle i::before {
+  top: -7px;
+}
+
+.Simle-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.Simle-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.Simle-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.Simle-nav-toggle.active i {
+  background: transparent;
+}
+
+.Simle-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.Simle-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.Simle-nav-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  border-bottom: none !important;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px 10px 10px;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .Simle-nav-toggle {
+    display: block;
+  }
+}
+
+#Simle-type {
+  padding: 7em 0;
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#Simle-type > .Simle-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+}
+#Simle-type > .container {
+  z-index: 10;
+  position: relative;
+}
+#Simle-type .Simle-type {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #Simle-type .Simle-type {
+    margin-bottom: 30px;
+  }
+}
+#Simle-type h3 {
+  margin-bottom: 30px;
+  font-style: italic;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 110px;
+}
+#Simle-type h3.with-icon {
+  position: relative;
+}
+#Simle-type h3.with-icon:before, #Simle-type h3.with-icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -54px;
+  margin-top: -125px;
+  width: 104px;
+  height: 104px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#Simle-type h3.with-icon.icon-1:before, #Simle-type h3.with-icon.icon-1::before {
+  background: url(../images/type-1.png) no-repeat center center;
+}
+#Simle-type h3.with-icon.icon-2:before, #Simle-type h3.with-icon.icon-2::before {
+  background: url(../images/type-2.png) no-repeat center center;
+}
+#Simle-type h3.with-icon.icon-3:before, #Simle-type h3.with-icon.icon-3::before {
+  background: url(../images/type-3.png) no-repeat center center;
+}
+#Simle-type h3.with-icon.icon-4:before, #Simle-type h3.with-icon.icon-4::before {
+  background: url(../images/type-4.png) no-repeat center center;
+}
+#Simle-type p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.js .to-animate, .js
+.to-animate-2 {
+  opacity: 0;
+}
+
+.row-padded {
+  padding-bottom: 40px;
+}
