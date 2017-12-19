@@ -195,7 +195,7 @@ p {
 #Simle-home .flexslider {
   border: none;
   position: relative;
-  z-index: 1;
+  z-index: 1;/*позиционированние элементов (накладывание)Чем больше значение, тем выше находится элемент по сравнению с теми элементами, у которых оно меньше.*/
   margin-bottom: 0;
 }
 #Simle-home .flexslider .Simle-text {
@@ -216,7 +216,7 @@ p {
   color: #fff;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s;
+  transition: 0.3s;/*эффект перехода*/
 }
 @media screen and (max-width: 992px) {
   #Simle-home .flexslider .Simle-text h1 {
@@ -451,6 +451,7 @@ p {
     bottom: -60px;
   }
 }
+Б
 #Simle-sayings .flexslider .flex-control-paging li a {
   width: 14px;
   height: 14px;
@@ -496,7 +497,7 @@ p {
 #Simle-featured .Simle-heading .sub-heading {
   color: #a99c92;
 }
-#Simle-featured .Simle-grid {
+#Simle-featured .Simle-grid {/*wrap задает правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков. Если перенос разрешен, то возможно задать направление, в котором выводятся блоки.*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -772,7 +773,7 @@ p {
   width: 100%;
 }
 #Simle-menus .Simle-food-menu ul li .Simle-food-desc {
-  clear: both;
+  clear: both;/*Устанавливает, с какой стороны элемента запрещено его обтекание другими элементами.Отменяет обтекание элемента одновременно с правого и левого края=both */
   float: left;
   width: 80%;
 }
@@ -807,109 +808,11 @@ p {
   color: #000;
 }
 #Simle-menus .Simle-food-menu ul li .Simle-food-pricing {
-  float: right;
+  float: right;/*viravnivanie elementa */
   width: 20%;
   text-align: right;
   font-size: 20px;
   color: #fb6e14;
-}
-
-#Simle-events {
-  padding: 7em 0;
-  background-color: transparent;
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-}
-#Simle-events > .Simle-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 9;
-}
-#Simle-events > .container {
-  z-index: 10;
-  position: relative;
-}
-#Simle-events .Simle-heading .heading {
-  position: relative;
-  padding-top: 30px !important;
-  color: #fff;
-}
-#Simle-events .Simle-heading .heading:before, #Simle-events .Simle-heading .heading::before {
-  height: 64px;
-  width: 49px;
-  position: absolute;
-  content: "";
-  background: url(../images/0402-chef.png) no-repeat;
-  top: 0;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -24px;
-}
-#Simle-events .Simle-heading .sub-heading {
-  color: #a99c92;
-}
-@media screen and (max-width: 768px) {
-  #Simle-events {
-    padding: 5em 0;
-  }
-}
-#Simle-events .Simle-event {
-  background: #fff;
-  padding: 50px;
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-}
-#Simle-events .Simle-event:before {
-  border: 2px solid #e6e6e6;
-  content: "";
-  position: absolute;
-  top: 15px;
-  bottom: 15px;
-  right: 15px;
-  left: 15px;
-  z-index: 0;
-}
-#Simle-events .Simle-event h3, #Simle-events .Simle-event .Simle-event-meta, #Simle-events .Simle-event p, #Simle-events .Simle-event .btn {
-  position: relative;
-  z-index: 2;
-}
-#Simle-events .Simle-event h3 {
-  padding: 0;
-  margin: 0;
-}
-#Simle-events .Simle-event .Simle-event-meta {
-  margin-bottom: 20px;
-  display: block;
-  color: gray;
-  position: relative;
-  padding-bottom: 10px;
-}
-#Simle-events .Simle-event .Simle-event-meta:after, #Simle-events .Simle-event .Simle-event-meta::after {
-  background: #bfbfbf;
-  background: #fb6e14;
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 40px;
-  height: 2px;
-  margin-left: -20px;
-}
-#Simle-events .Simle-event p {
-  font-size: 16px;
-  line-height: 1.8;
-}
-#Simle-events .Simle-event p:last-child {
-  margin-bottom: 0;
-}
-#Simle-events .Simle-event .btn {
-  margin-bottom: 0;
 }
 
 #Simle-contact {

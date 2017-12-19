@@ -6,7 +6,7 @@
 
 	// iPad and iPod detection
 	var isiPad = function(){
-		return (navigator.platform.indexOf("iPad") != -1);
+		return (navigator.platform.indexOf("Androi") != -1);
 	};
 
 	var isiPhone = function(){
@@ -15,7 +15,7 @@
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
-
+/*Если пользователи переходят вверх по сайту, то изменять внешний вид навигации*/
 	var fullHeight = function() {
 		if ( !isiPad() && !isiPhone() ) {
 			$('.js-fullheight').css('height', $(window).height());
@@ -66,7 +66,7 @@
 		// $('#Simle-offcanvas').append
 	};
 
-	var mainMenuSticky = function() {
+	var mainMenuSticky = function() {//zakreplenie bloka
 
 		var sticky = $('.js-sticky');
 
@@ -96,7 +96,7 @@
 
 		$('.js-sticky').waypoint(function(direction) {
 		  	if (direction === 'up') {
-		    	$section.attr('style', '').removeClass('Simle-shadow');
+		    	$section.attr('style', '').removeClass('Simle-shadow');/*attr получение значения атрибутапервого элемента*/
 		  	}
 		}, {
 		  	offset: function() { return -$(this.element).height() + 69; }
@@ -445,7 +445,7 @@
 	};
 
 
-	var eventsAnimate = function() {
+	var eventsAnimate = function() { /*анимация футера*/
 		var events = $('#Simle-events');
 		if ( events.length > 0 ) {
 
